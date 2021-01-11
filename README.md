@@ -1,4 +1,4 @@
-# Fundamentos_Web_4_Erika-Raffael
+# Projeto_Pedra_Pepel_Tesoura_Erika-Raffael
 
 <p>Entrada:</p>
 <img src="./img/img1.jpeg" width="700">
