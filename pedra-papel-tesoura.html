@@ -5,48 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
 
+    <h1 class="espaco">Pedra Papel e Tesoura</h1>
 
-    <script>
-        function computerPlays() {
-            var opcoes = ['pedra', 'papel', 'tesoura']
-            return (opcoes[Math.floor(Math.random() * opcoes.length)].toLowerCase())
-        }
+    <div class="espaco">
+        <button id="pedra" class="botoes pedra"></button>
+        <button id="papel" class="botoes papel"></button>
+        <button id="tesoura" class="botoes tesoura"></button>
+    </div>
+
+    <h2 class="espaco">O computador escolheu:</h2>
+
+    <div id="escolhaPc"class="espaco">
         
-        const playerSelection = prompt("Escolha Pedra, Papel ou Tesoura: ");
-        const computerSelection = computerPlays();
-
-
-        function playRound(playerSelection, computerSelection) {
-            if (playerSelection.toLowerCase() === 'pedra' && computerSelection === 'pedra') {
-                console.log('Empate ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if (playerSelection.toLowerCase() === 'pedra' && computerSelection === 'papel') {
-                console.log('Perdeu ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if ((playerSelection.toLowerCase() === 'pedra' && computerSelection === 'tesoura')) {
-                console.log('Ganhou ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            }
-
-            if (playerSelection.toLowerCase() === 'papel' && computerSelection === 'papel') {
-                console.log('Empate ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if (playerSelection.toLowerCase() === 'papel' && computerSelection === 'tesoura') {
-                console.log('Perdeu ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if (playerSelection.toLowerCase() === 'papel' && computerSelection === 'pedra') {
-                console.log('Ganhou ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            }
-
-            if (playerSelection.toLowerCase() === 'tesoura' && computerSelection === 'tesoura') {
-                console.log('Empate ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if (playerSelection.toLowerCase() === 'tesoura' && computerSelection === 'pedra') {
-                console.log('Perdeu ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            } else if (playerSelection.toLowerCase() === 'tesoura' && computerSelection === 'papel') {
-                console.log('Ganhou ! Você jogou: ' + playerSelection + ' e o computador jogou: ' + computerSelection);
-            }
-        }
-        console.log(playRound(playerSelection, computerSelection));
-    </script>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

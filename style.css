@@ -1,0 +1,49 @@
+.espaco {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botao {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 1em black;
+    border: none;
+}
+
+.botao:hover {
+    box-shadow: 5px 5px 1em black;
+}
+
+.botoes {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 1em black;
+    border: none;
+}
+
+.botoes:hover {
+    box-shadow: 5px 5px 1em black;
+    cursor: pointer;
+}
+
+.pedra {
+    background-image: url("./img/pedra.png");
+    background-repeat: no-repeat;
+}
+
+.papel {
+    background-image: url("./img/papel.png");
+    background-repeat: no-repeat;
+}
+
+.tesoura {
+    background-image: url("./img/tesoura.png");
+    background-repeat: no-repeat;
+}
